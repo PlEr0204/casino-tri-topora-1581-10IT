@@ -19,7 +19,7 @@ $(document).ready(function () {
 				$('#paswd2').removeClass('is-invalid');
 			}
 		}
-		
+
 		if (err){
 			return false
 		}else{
@@ -33,8 +33,8 @@ $(document).ready(function () {
 			  url: "/ajax/registration",
 			  contentType: "application/json",
 			  dataType: 'json',
-			  data: JSON.stringify({ 
-			  	login: $('#login').val(), 
+			  data: JSON.stringify({
+			  	login: $('#login').val(),
 			  	paswd: $('#paswd').val(),
 			  	name: $('#name').val(),
 			  	surname: $('#surname').val(),
@@ -55,8 +55,8 @@ $(document).ready(function () {
 			  url: "/ajax/login",
 			  contentType: "application/json",
 			  dataType: 'json',
-			  data: JSON.stringify({ 
-			  	login: $('#login').val(), 
+			  data: JSON.stringify({
+			  	login: $('#login').val(),
 			  	paswd: $('#paswd').val(),
 			  }),
 			})
@@ -70,5 +70,9 @@ $(document).ready(function () {
 			    }
 			});
 		}
+	})
+	$('#admin_login_btn').on('click',function(){
+	    window.location.href = '/admin_login';
+
 	})
 })

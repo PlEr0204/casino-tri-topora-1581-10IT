@@ -13,21 +13,22 @@
       <div class='row'>
         <div class='col'>
           <div id='akk'>
-            <i class="fa-solid fa-user" style='font-size: 100px'></i>       <i class="fa-solid fa-user" style='font-size: 100px'></i>     <i class="fa-solid fa-user" style='font-size: 100px'></i>{{session['name']}} {{session['surname']}} <a href='/logout'>(нажмите для выхода)</a>
+            {{session['name']}} {{session['surname']}} <a href='/logout'>(нажмите для выхода)</a>
           </div>
         </div>
       </div>
-      
+      <div class='admin_btn'>
+        <button type="button" id='admin_login_btn' class="btn btn-light">Админ панель</button>
       {% for i in range(10) %}
       <div class='row'>
         {% for j in range(4) %}
         <div class='col-3'>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://kalix.club/uploads/posts/2022-12/1671546648_kalix-club-p-velo-oboi-krasivo-7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Велосипед YT</h5>
+            <p class="card-text">Цена: 350 000 руб</p>
+              <a href="#" class="btn btn-primary">Купить</a>
             </div> 
           </div>
         </div>

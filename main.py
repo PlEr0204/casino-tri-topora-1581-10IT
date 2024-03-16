@@ -39,6 +39,10 @@ def rega():
 def login():
     return render_template('login.html')
 
+@app.route("/admin_login")
+def admin_login():
+    return render_template('admin_login.html')
+
 @app.route("/darkshop")
 def shop():
     if session:
